@@ -1,0 +1,560 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=0">
+    <meta name="description" content="Smarthr - Bootstrap Admin Template">
+    <meta name="keywords" content="admin, estimates, bootstrap, business, html5, responsive, Projects">
+    <meta name="author" content="Dreams technologies - Bootstrap Admin Template">
+    <meta name="robots" content="noindex, nofollow">
+    <title>Smarthr Admin Template</title>
+
+    <!-- Favicon -->
+    <link rel="shortcut icon" type="image/x-icon" href="build/img/favicon.png">
+
+    <!-- Apple Touch Icon -->
+    <link rel="apple-touch-icon" sizes="180x180" href="build/img/apple-touch-icon.png">
+
+    <!-- Theme Script js -->
+    <!-- <script src="build/js/theme-script.js" type="dc830c3e930c90c5fe7ace7f-text/javascript">
+        >
+    </script> -->
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="build/css/bootstrap.min.css">
+
+    <!-- Feather CSS -->
+    <link rel="stylesheet" href="build/plugins/icons/feather/feather.css">
+
+
+    <!-- Tabler Icon CSS -->
+    <link rel="stylesheet" href="build/plugins/tabler-icons/tabler-icons.css">
+
+
+    <!-- Select2 CSS -->
+    <link rel="stylesheet" href="build/plugins/select2/css/select2.min.css">
+
+    <!-- Fontawesome CSS -->
+    <link rel="stylesheet" href="build/plugins/fontawesome/css/fontawesome.min.css">
+    <link rel="stylesheet" href="build/plugins/fontawesome/css/all.min.css">
+
+    <!-- Color Picker Css -->
+    <link rel="stylesheet" href="build/plugins/flatpickr/flatpickr.min.css">
+    <link rel="stylesheet" href="build/plugins/@simonwep/pickr/themes/nano.min.css">
+
+    <!-- Daterangepikcer CSS -->
+    <link rel="stylesheet" href="build/plugins/daterangepicker/daterangepicker.css">
+
+    <!-- Datatable CSS -->
+    <link rel="stylesheet" href="build/css/dataTables.bootstrap5.min.css">
+
+    <!-- Summernote CSS -->
+    <link rel="stylesheet" href="build/plugins/summernote/summernote-lite.min.css">
+
+    <!-- Datetimepicker CSS -->
+    <link rel="stylesheet" href="build/css/bootstrap-datetimepicker.min.css">
+    <!-- Bootstrap Tagsinput CSS -->
+    <link rel="stylesheet" href="build/plugins/bootstrap-tagsinput/bootstrap-tagsinput.css">
+    <!-- Main CSS -->
+    <link rel="stylesheet" href="build/css/style.css">
+</head>
+<style>
+    .nav .nav-item button.active {
+  background-color: transparent;
+  /* color: var(--bs-danger) !important; */
+}
+.nav .nav-item button.active::after {
+  content: "";
+  border-bottom: 4px solid #F26522;
+  width: 100%;
+  position: absolute;
+  left: 0;
+  bottom: -1px;
+  border-radius: none;
+}
+
+.toggle-password {
+    cursor: pointer;
+}
+</style>
+
+<body>
+
+    <!-- Main Wrapper -->
+    <div class="main-wrapper">
+
+        <!-- Header -->
+        <div class="header">
+            <div class="main-header">
+
+                <div class="header-left">
+                    <a href="#" class="logo">
+                <img src="build/img/logo.svg" alt="Logo">
+            </a>
+                    <a href="#" class="dark-logo">
+                <img src="build/img/logo-white.svg" alt="Logo">
+            </a>
+                </div>
+
+                <a id="mobile_btn" class="mobile_btn" href="#sidebar">
+                    <span class="bar-icon">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </span>
+                </a>
+
+                    <div class="header-user">
+                        <div class="nav user-menu nav-list">
+                            <div class="me-auto d-flex align-items-center" id="header-search">
+                                <a id="toggle_btn" href="javascript:void(0);" class="btn btn-menubar me-1">
+                                    <i class="ti ti-arrow-bar-to-left"></i>
+                                </a>
+                            </div>
+                            <!-- /Horizontal Single -->
+                            <div class="d-flex align-items-center">
+                                <div class="me-1">
+                                    <a href="#" class="btn btn-menubar btnFullscreen">
+                                        <i class="ti ti-maximize"></i>
+                                    </a>
+                                </div>
+                                <a href="#" class="btn btn-menubar position-relative me-1" id="notification_popup"
+                                    data-bs-toggle="dropdown">
+                                    <i class="ti ti-bell"></i>
+                                    <span class="notification-status-dot"></span>
+                                </a>
+                                <div class="dropdown profile-dropdown">
+                                    <a href="javascript:void(0);" class="dropdown-toggle d-flex align-items-center"
+                                        data-bs-toggle="dropdown">
+                                        <span class="avatar avatar-sm online">
+                                            <img src="build/img/profiles/avatar-12.jpg" alt="Img" class="img-fluid rounded-circle">
+                                        </span>
+                                    </a>
+                                    <div class="dropdown-menu shadow-none">
+                                        <div class="card mb-0">
+                                            <div class="card-header">
+                                                <div class="d-flex align-items-center">
+                                                    <span class="avatar avatar-lg me-2 avatar-rounded">
+                                                        <img src="build/img/profiles/avatar-12.jpg" alt="img">
+                                                    </span>
+                                                    <div>
+                                                        <h5 class="mb-0">Kevin Larry</h5>
+                                                        <p class="fs-12 fw-medium mb-0"><a href="cdn-cgi/l/email-protection"
+                                                                class="__cf_email__"
+                                                                data-cfemail="097e687b7b6c67496c71686479656c276a6664">[email&#160;protected]</a>
+                                                        </p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="card-body">
+                                                <a class="dropdown-item d-inline-flex align-items-center p-0 py-2" href="password-setting.html">
+                                                    <i class="ti ti-user-circle me-1"></i>My Profile
+                                                </a>
+                                                <a class="dropdown-item d-inline-flex align-items-center p-0 py-2" href="password-setting.html">
+                                                    <i class="ti ti-settings me-1"></i>Settings
+                                                </a>
+                                                <a class="dropdown-item d-inline-flex align-items-center p-0 py-2" href="#">
+                                                    <i class="ti ti-status-change me-1"></i>Status
+                                                </a>
+                                                <a class="dropdown-item d-inline-flex align-items-center p-0 py-2" href="#">
+                                                    <i class="ti ti-circle-arrow-up me-1"></i>My Account
+                                                </a>
+                                            </div>
+                                            <div class="card-footer">
+                                                <a class="dropdown-item d-inline-flex align-items-center p-0 py-2" href=""></a>
+                                                <i class="ti ti-login me-2"></i>Logout
+                                                </a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+
+                <!-- Mobile Menu -->
+                <div class="dropdown mobile-user-menu">
+                    <a href="javascript:void(0);" class="nav-link dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false"><i class="fa fa-ellipsis-v"></i></a>
+                    <div class="dropdown-menu dropdown-menu-end">
+                        <a class="dropdown-item" href="#">My Profile</a>
+                        <a class="dropdown-item" href="#">Settings</a>
+                        <a class="dropdown-item" href="#">Logout</a>
+                    </div>
+                </div>
+                <!-- /Mobile Menu -->
+
+            </div>
+
+        </div>
+        <!-- /Header -->
+        <!-- Sidebar -->
+        <div class="sidebar" id="sidebar">
+            <!-- Logo -->
+            <div class="sidebar-logo">
+                <a href="#" class="logo logo-normal">
+                    <img src="build/img/logo.svg" alt="Logo">
+                </a>
+                <a href="#" class="logo-small">
+                    <img src="build/img/logo-small.svg"
+                        alt="Logo">
+                </a>
+                <a href="#" class="dark-logo">
+                    <img src="build/img/logo-white.svg"
+                        alt="Logo">
+                </a>
+            </div>
+
+            <div class="sidebar-inner slimscroll">
+                <div id="sidebar-menu" class="sidebar-menu">
+                    
+                    <ul>
+                        <li class="menu-title"><span>MAIN MENU</span></li>
+                        <li>
+                            <ul>
+                                <li class="">
+                                    <a href="employee-dashboard.html">
+                                        <i class="ti ti-smart-home"></i><span>Dashboard</span>
+                                    </a>
+                                </li>
+                                <li class="">
+                                    <a href="calendar.html">
+                                        <i class="ti ti-layout-grid-add"></i><span>Calendar</span>
+                                    </a>
+                                </li>
+                                <li class="">
+                                    <a href="profile-setting.html">
+                                        <i class="ti ti-file-time"></i><span>Edit Profile</span>
+                                    </a>
+                                </li>
+                            </ul>
+                        </li>
+                    </ul>
+                </div> 
+            </div>
+        </div>
+        <!-- /Sidebar -->
+        <!-- Page Wrapper -->
+        <div class="page-wrapper">
+            <div class="content">
+
+                <!-- Breadcrumb -->
+                <div class="d-md-flex d-block align-items-center justify-content-between page-breadcrumb mb-3">
+                    <div class="my-auto mb-2">
+                        <h2 class="mb-1">Settings</h2>
+                        <nav>
+                            <ol class="breadcrumb mb-0">
+                                <li class="breadcrumb-item">
+                                    <a href="#"><i class="ti ti-smart-home"></i></a>
+                                </li>
+                                <li class="breadcrumb-item">
+                                    Administration
+                                </li>
+                                <li class="breadcrumb-item active" aria-current="page">Settings</li>
+                            </ol>
+                        </nav>
+                    </div>
+                   
+                </div>
+            
+                <div class="row">
+                    <div class="container">
+                        <ul class="nav nav-tabs nav-tabs-solid bg-transparent border-bottom mb-3" id="pills-tab" role="tablist">
+                            <li class="nav-item" role="presentation">
+                            <button class="nav-link   text-primary fw-semibold active position-relative" 
+                            id="pills-home-tab" data-bs-toggle="pill" data-bs-target="#pills-home" 
+                            type="button" role="tab" aria-controls="pills-home" aria-selected="true"><i class="ti ti-settings me-2"></i>General Settings</button>
+                            </li>
+                            <li class="nav-item" role="presentation">
+                            <button class="nav-link text-primary fw-semibold position-relative" id="pills-profile-tab" data-bs-toggle="pill" 
+                            data-bs-target="#pills-profile" type="button" role="tab" aria-controls="pills-profile" aria-selected="false">
+                            <i class="ti ti-world-cog me-2"></i>Password Settings
+                            </button>
+                            </li>
+                        
+                        </ul>
+                        <div class="tab-content" id="pills-tabContent">
+                            <div class="tab-pane fade show active" id="pills-home" role="tabpanel" aria-labelledby="pills-home-tab">
+                            <div class="col-xl-6">
+                                <div class="card">
+                                    <div class="card-body">
+                                        <div class="border-bottom mb-3 pb-3">
+                                            <h4>Profile Settings</h4>
+                                        </div>
+                                        <form action="profile-settings">
+                                            <div class="border-bottom mb-3">
+                                                <div class="row">
+                                                    <div class="col-md-12">
+                                                        <div>
+                                                            <h6 class="mb-3">Basic Information</h6>
+                                                            <div
+                                                                class="d-flex align-items-center flex-wrap row-gap-3 bg-light w-100 rounded p-3 mb-4">
+                                                                <div
+                                                                    class="d-flex align-items-center justify-content-center avatar avatar-xxl rounded-circle border border-dashed me-2 flex-shrink-0 text-dark frames">
+                                                                    <i class="ti ti-photo text-gray-3 fs-16"></i>
+                                                                </div>
+                                                                <div class="profile-upload">
+                                                                    <div class="mb-2">
+                                                                        <h6 class="mb-1">Profile Photo</h6>
+                                                                        <p class="fs-12">Recommended image size is 40px x 40px</p>
+                                                                    </div>
+                                                                    <div class="profile-uploader d-flex align-items-center">
+                                                                        <div class="drag-upload-btn btn btn-sm btn-primary me-2">
+                                                                            Upload
+                                                                            <input type="file" class="form-control image-sign" multiple="">
+                                                                        </div>
+                                                                        <a href="javascript:void(0);" class="btn btn-light btn-sm">Cancel</a>
+                                                                    </div>
+                            
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="row">
+                                                    <div class="col-md-6">
+                                                        <div class="row align-items-center mb-3">
+                                                            <div class="col-md-4">
+                                                                <label class="form-label mb-md-0">First Name</label>
+                                                            </div>
+                                                            <div class="col-md-8">
+                                                                <input type="text" class="form-control">
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                  
+                                                    <div class="col-md-6">
+                                                        <div class="row align-items-center mb-3">
+                                                            <div class="col-md-4">
+                                                                <label class="form-label mb-md-0">Email</label>
+                                                            </div>
+                                                            <div class="col-md-8">
+                                                                <input type="text" class="form-control">
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    
+                                                    <div class="col-md-6">
+                                                        <div class="row align-items-center mb-3">
+                                                            <div class="col-md-4">
+                                                                <label class="form-label mb-md-0">Phone</label>
+                                                            </div>
+                                                            <div class="col-md-8">
+                                                                <input type="text" class="form-control">
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="border-bottom mb-3">
+                                                <h6 class="mb-3">Address Information</h6>
+                                                <div class="row">
+                                                    <div class="col-md-12">
+                                                        <div class="row align-items-center mb-3">
+                                                            <div class="col-md-2">
+                                                                <label class="form-label mb-md-0">Address</label>
+                                                            </div>
+                                                            <div class="col-md-10">
+                                                                <input type="text" class="form-control">
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-md-6">
+                                                        <div class="row align-items-center mb-3">
+                                                            <div class="col-md-4">
+                                                                <label class="form-label mb-md-0">City</label>
+                                                            </div>
+                                                            <div class="col-md-8">
+                                                                <input type="text" class="form-control">
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-md-6">
+                                                        <div class="row align-items-center mb-3">
+                                                            <div class="col-md-4">
+                                                                <label class="form-label mb-md-0">State</label>
+                                                            </div>
+                                                            <div class="col-md-8">
+                                                                   <input type="text" class="form-control">
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                   
+                                                    <div class="col-md-6">
+                                                        <div class="row align-items-center mb-3">
+                                                            <div class="col-md-4">
+                                                                <label class="form-label mb-md-0">Postal Code</label>
+                                                            </div>
+                                                            <div class="col-md-8">
+                                                                <input type="text" class="form-control">
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="d-flex align-items-center justify-content-end">
+                                                <button type="button" class="btn btn-outline-light border me-3">Cancel</button>
+                                                <button type="submit" class="btn btn-primary">Save</button>
+                                            </div>
+                                        </form>
+                                    </div>
+                                </div>
+                            </div>
+                            </div>
+                            <div class="tab-pane fade" id="pills-profile" role="tabpanel" aria-labelledby="pills-profile-tab">
+                                 <div class="col-xl-7">
+                                    <div class="card">
+                                        <div class="card-body">
+                                            <div class="border-bottom mb-3 pb-3">
+                                                <h4>Password Setting</h4>
+                                            </div>
+                                            <form action="#">
+                                                <div class="border-bottom mb-3">
+                                                    <div class="row">
+                                                        <div class="col-md-7">
+                                                            <div class="row align-items-center mb-3">
+                                                                <div class="col-md-4">
+                                                                    <label class="form-label mb-md-0">Old Password</label>
+                                                                </div>
+                                                                <div class="col-md-8">
+                                                                    <div class="position-relative">
+                                                                        <input type="password" class="form-control" id="oldPassword" placeholder="Enter Old Password">
+                                                                        <i class="ti ti-eye-off position-absolute top-50 end-0 translate-middle-y me-3" id="toggleOldPassword"
+                                                                            style="cursor: pointer;"></i>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                        <div class="col-md-7">
+                                                            <div class="row align-items-center mb-3">
+                                                                <div class="col-md-4">
+                                                                    <label class="form-label mb-md-0">New Password</label>
+                                                                </div>
+                                                                <div class="col-md-8">
+                                                                    <div class="position-relative mb-3">
+                                                                        <input type="password" class="form-control" id="newPassword" placeholder="Enter New Password">
+                                                                        <i class="ti ti-eye-off position-absolute top-50 end-0 translate-middle-y me-3" id="toggleNewPassword"
+                                                                            style="cursor: pointer;"></i>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                        <div class="col-md-7">
+                                                            <div class="row align-items-center mb-3">
+                                                                <div class="col-md-4">
+                                                                    <label class="form-label mb-md-0">Confirm New Password</label>
+                                                                </div>
+                                                                <div class="col-md-8">
+                                                                    <div class="position-relative mb-3">
+                                                                        <input type="password" class="form-control" id="confirmPassword" placeholder="Confirm Password">
+                                                                        <i class="ti ti-eye-off position-absolute top-50 end-0 translate-middle-y me-3" id="toggleConfirmPassword"
+                                                                            style="cursor: pointer;"></i>
+                                                                    </div>                                                                   
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                      
+                                                    </div>
+                                                </div>
+                                              
+                                                <div class="d-flex align-items-center justify-content-end">
+                                                    <button type="button" class="btn btn-outline-light border me-3">Cancel</button>
+                                                    <button type="submit" class="btn btn-primary">Save</button>
+                                                </div>
+                                            </form>
+                                        </div>
+                                    </div>
+                                </div>
+                              
+                            </div>
+                            <div class="tab-pane fade" id="pills-contact" role="tabpanel" aria-labelledby="pills-contact-tab">
+                            <h2>Contact</h2>
+                            <p>Please check our more design @ <a target="_blank" href="https://codepen.io/Gaurav-Rana-the-reactor">Codepen</a></p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- <div class="footer d-sm-flex align-items-center justify-content-between border-top bg-white p-3">
+                <p class="mb-0">2014 - 2025 &copy; SmartHR.</p>
+                <p>Designed &amp; Developed By <a href="javascript:void(0);" class="text-primary">Dreams</a></p>
+            </div> -->
+        </div>
+        <!-- /Page Wrapper -->
+
+
+    </div>
+    <!-- /Main Wrapper -->
+
+    <!-- jQuery -->
+    <script data-cfasync="false" src="cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script>
+    <script src="build/js/jquery-3.7.1.min.js" type="dc830c3e930c90c5fe7ace7f-text/javascript"></script>
+
+    <!-- Bootstrap Core JS -->
+    <script src="build/js/bootstrap.bundle.min.js" type="dc830c3e930c90c5fe7ace7f-text/javascript"></script>
+
+    <!-- Feather Icon JS -->
+    <script src="build/js/feather.min.js" type="dc830c3e930c90c5fe7ace7f-text/javascript"></script>
+
+    <!-- Slimscroll JS -->
+    <script src="build/js/jquery.slimscroll.min.js" type="dc830c3e930c90c5fe7ace7f-text/javascript"></script>
+
+    <!-- Summernote JS -->
+    <script src="build/plugins/summernote/summernote-lite.min.js" type="dc830c3e930c90c5fe7ace7f-text/javascript"></script>
+
+    <!-- Daterangepikcer JS -->
+    <script src="build/js/moment.min.js" type="dc830c3e930c90c5fe7ace7f-text/javascript"></script>
+    <script src="build/plugins/daterangepicker/daterangepicker.js" type="dc830c3e930c90c5fe7ace7f-text/javascript"></script>
+    <!-- Color Picker JS -->
+    <script src="build/plugins/@simonwep/pickr/pickr.es5.min.js" type="dc830c3e930c90c5fe7ace7f-text/javascript"></script>
+
+    <!-- Datatable JS -->
+    <script src="build/js/jquery.dataTables.min.js" type="dc830c3e930c90c5fe7ace7f-text/javascript"></script>
+    <script src="build/js/dataTables.bootstrap5.min.js" type="dc830c3e930c90c5fe7ace7f-text/javascript"></script>
+
+    <!-- Bootstrap Tagsinput JS -->
+    <script src="build/plugins/bootstrap-tagsinput/bootstrap-tagsinput.js" type="dc830c3e930c90c5fe7ace7f-text/javascript"></script>
+    <!-- Datetimepicker JS -->
+    <script src="build/js/bootstrap-datetimepicker.min.js" type="dc830c3e930c90c5fe7ace7f-text/javascript"></script>
+
+    <!-- Select2 JS -->
+    <script src="build/plugins/select2/js/select2.min.js" type="dc830c3e930c90c5fe7ace7f-text/javascript"></script>
+
+    <!-- Sticky Sidebar JS -->
+    <script src="build/plugins/theia-sticky-sidebar/ResizeSensor.js" type="dc830c3e930c90c5fe7ace7f-text/javascript"></script>
+    <script src="build/plugins/theia-sticky-sidebar/theia-sticky-sidebar.js" type="dc830c3e930c90c5fe7ace7f-text/javascript"></script>
+
+    <!-- Theme Color JS -->
+    <script src="build/js/theme-colorpicker.js" type="dc830c3e930c90c5fe7ace7f-text/javascript"></script>
+
+    <!-- Custom JS -->
+    <script src="build/js/script.js" type="dc830c3e930c90c5fe7ace7f-text/javascript"></script>
+    <script src="cdn-cgi/scripts/7d0fa10a/cloudflare-static/rocket-loader.min.js" data-cf-settings="dc830c3e930c90c5fe7ace7f-|49" defer></script>
+    <script defer src="https://static.cloudflareinsights.com/beacon.min.js/vcd15cbe7772f49c399c6a5babf22c1241717689176015" integrity="sha512-ZpsOmlRQV6y907TI0dKBHq9Md29nnaEIPlkf84rnaERnq6zvWvPUqr2ft8M1aS28oN72PdrCzSjY4U6VaAw1EQ==" data-cf-beacon='{"version":"2024.11.0","token":"3ca157e612a14eccbb30cf6db6691c29","server_timing":{"name":{"cfCacheStatus":true,"cfEdge":true,"cfExtPri":true,"cfL4":true,"cfOrigin":true,"cfSpeedBrain":true},"location_startswith":null}}'
+        crossorigin="anonymous"></script>
+</body>
+
+</html>
+
+<script>
+ function setupPasswordToggle(toggleId, inputId) {
+    const toggleIcon = document.getElementById(toggleId);
+    const inputField = document.getElementById(inputId);
+
+    toggleIcon.addEventListener("click", function () {
+        const type = inputField.getAttribute("type") === "password" ? "text" : "password";
+        inputField.setAttribute("type", type);
+        this.classList.toggle("ti-eye");
+        this.classList.toggle("ti-eye-off");
+    });
+}
+
+// Apply toggle to each field
+setupPasswordToggle("toggleOldPassword", "oldPassword");
+setupPasswordToggle("toggleNewPassword", "newPassword");
+setupPasswordToggle("toggleConfirmPassword", "confirmPassword");
+
+
+</script>
